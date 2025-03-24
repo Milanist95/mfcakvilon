@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Состав Аквилон</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Кнопка возврата -->
+        <div class="back-button" onclick="showTiles()">← Назад</div>
+
+        <!-- Плитки -->
+        <div id="tiles">
+            <div class="tile" onclick="showPlayers('main')">Основной состав</div>
+            <div class="tile" onclick="showPlayers('coaches')">Тренерский штаб</div>
+            <div class="tile" onclick="showPlayers('reserves')">Запасные</div>
+        </div>
+
+        <!-- Основной состав -->
+        <div id="main" class="player-list">
+            <div class="player">
+                <img src="https://via.placeholder.com/100" alt="Игрок 1">
+                <p><strong>Иван Иванов</strong></p>
+                <p>Должность: Прораб</p>
+                <p>Амплуа: Нападающий</p>
+            </div>
+            <!-- Добавьте других игроков -->
+        </div>
+
+        <!-- Тренерский штаб -->
+        <div id="coaches" class="player-list">
+            <div class="player">
+                <img src="https://via.placeholder.com/100" alt="Тренер 1">
+                <p><strong>Петр Петров</strong></p>
+                <p>Должность: Главный инженер</p>
+                <p>Амплуа: Тренер</p>
+            </div>
+            <!-- Добавьте других тренеров -->
+        </div>
+
+        <!-- Запасные -->
+        <div id="reserves" class="player-list">
+            <div class="player">
+                <img src="https://via.placeholder.com/100" alt="Запасной 1">
+                <p><strong>Сергей Сергеев</strong></p>
+                <p>Должность: Мастер</p>
+                <p>Амплуа: Защитник</p>
+            </div>
+            <!-- Добавьте других запасных -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
